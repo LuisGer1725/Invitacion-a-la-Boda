@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondo con una imagen</title>
+    <link rel="stylesheet" href="/styles/styles_index.css">
+</head>
+<body>
+    <section class="section section1 active" id="section1">
+        <button onclick="playMusic()">Clik para ver <br> si funcion</button>
+    </section>
+    <section class="section section2" id="section2">
+        <div class="background-layer background1"></div> <!-- Imagen 1 -->
+        <div class="background-layer background2"> <!-- Imagen 2 -->
+            <h1 id="invitados-frase1"></h1>
+            <h2 id="invitados-frase2"></h2>
+        </div> 
+        <div class="background-layer background3"><!-- Imagen 3 -->
+            <div class="buttons-container">   
+                <!-- Botón 1 - Salon -->
+                <button class="btn-salon" onclick="redirectTo('https://maps.app.goo.gl/s3WAN6U31cCJ7ozf8')">Ir al Salon</button>
+                <!-- Botón 2 - Templo -->
+                <button class="btn-templo" onclick="redirectTo('https://maps.app.goo.gl/fGyxzVo2oNo9DETH8')">Ir al Templo</button>
+                <!-- Botón 3 - Whats -->
+                <button class="btn-whatsapp" onclick="redirectTo('https://wa.me/524442425928?text=Hola%20me%20encantaria%20confirmar%20mi%20asistencia%20y%20la%20de%20mi%20familia%20a%20tu%20boda')">
+                    Confirma tu Asistensia 
+                </button>
+            </div>
+            <h3>ESTE ES EL TIEMPO QUE FALTA !TE ESPERAMOS¡</h3>
+            <div id="countdown">
+                <div class="time-box">
+                    <span class="number" id="months">00</span>
+                    <span class="label">Meses</span>
+                </div>
+                <div class="time-box">
+                    <span class="number" id="days">00</span>
+                    <span class="label">Días</span>
+                </div>
+                <div class="time-box">
+                    <span class="number" id="hours">00</span>
+                    <span class="label">Horas</span>
+                </div>
+                <div class="time-box">
+                    <span class="number" id="minutes">00</span>
+                    <span class="label">Minutos</span>
+                </div>
+                <div class="time-box">
+                    <span class="number_s" id="seconds">00</span>
+                    <span class="label_s">Segundos</span>
+                </div>
+            </div>
+        
+        </div> 
+    
+    </section>
+
+    <audio id="audioPlayer" loop>
+        <source src="/audio/Perfect.mp3" type="audio/mp3"> <!-- Cambia esta URL por tu archivo de música -->
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+<script src="/scripts/section.js"></script>
+<script src="/scripts/audio.js"></script>
+<script src="/scripts/generador_nombres.js"></script>
+<script src="/scripts/ubicaciones.js"></script>
+<script src="/scripts/reloj.js"></script>
+</body>
