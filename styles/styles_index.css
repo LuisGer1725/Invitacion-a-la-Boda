@@ -1,0 +1,162 @@
+
+@font-face {
+    font-family: 'Estilo1';
+    src: url("/fonts/Monterchi-Serif-Thin-trial.ttf");
+    font-family: 'Estilo2';
+    src: url("/fonts/Monterchi-Serif-Book-trial.ttf");
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+}
+section {
+    display: none; /* Por defecto, no mostrar las secciones */
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+section.active {
+    display: block;
+}
+.section1 {
+    background-image: url('/img/0.png'); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+}
+.section2 {
+    flex-direction: column; /* Coloca los divs uno debajo del otro */
+    height: auto;
+}
+.section2 .background-layer { 
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Asegura que las capas de fondo estén detrás del contenido */
+}
+.background1 {
+    background-image: url('/img/1.jpg'); /* Primera imagen */
+}
+.background2 {
+    background-image: url('/img/2.png'); /* Segunda imagen */
+    color: #445d57; /* Cambia el color del texto */
+    line-height: 1; /* Ajusta el espacio entre líneas */
+    justify-content: flex-start; /* Alinea horizontalmente al inicio */
+    flex-direction: column; /* Asegura que los elementos se apilen en columna */
+
+    h1 {
+        order: 1; /* Posiciona <h1> después <h2> */
+        padding: 50px; /* Espaciado interno opcional */
+        font-family: 'Estilo1', serif; /* Cambia la familia tipográfica */
+        font-size: 20px; /* Cambia el tamaño del texto */
+        font-style: italic; /* Hace que el texto sea cursivo */
+        position: relative;
+        top: 150px; /* Mueve el texto 50 píxeles hacia abajo */
+    }
+
+    h2 {
+        order: 2;
+        padding: 40px; /* Espaciado interno opcional */
+        font-size: 15px; /* Cambia el tamaño del texto */
+        position: relative;
+        top: 80px;
+    }
+}
+.background3 {
+    background-image: url('/img/3.png'); /* Tercera imagen */
+    flex-direction: column;
+    color: #445d57; /* Cambia el color del texto */
+
+    h3 {
+        padding: 30px; /* Espaciado interno opcional */
+        font-family: 'Estilo1', serif; /* Cambia la familia tipográfica */
+        font-size: 17px; /* Cambia el tamaño del texto */
+        font-style: italic; /* Hace que el texto sea cursivo */
+        position: relative;
+        top: 485px; /* Mueve el texto 50 píxeles hacia abajo */
+    }
+}
+button {
+    position: relative;
+    top: 520px;
+    font-family: 'Estilo2', serif; /* Cambia la familia tipográfica */
+    padding: 20px 30px; /* Tamaño del botón */
+    font-size: 22px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    color: white; /* Color del texto */
+    background-color: #445d57; /* Color de fondo */
+    border: none; /* Sin bordes */
+    border-radius: 15px; /* Bordes redondeados */
+}
+.buttons-container {
+    flex-direction: line; /* Botones en columna */
+    align-items: center;
+    
+}
+.btn-salon {
+    top: 480px;
+    margin-inline-end: 0px; /* margen desde la linea final */
+    padding: 6px 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+.btn-templo {
+    top: 310px;
+    margin-inline-start: 11px; /* margen desde la linea inicial */
+    padding: 6px 36px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+.btn-whatsapp {
+    top: 525px;
+    padding: 15px 20px;
+}
+#countdown {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+
+  }
+  
+  .time-box {
+    position: relative;
+    top: 430px;
+    text-align: center;
+    display: flex; /* Flexbox para organizar */
+    font-family: 'Estilo1', serif; /* Cambia la familia tipográfica */
+    color: #445d57; /* Cambia el color del texto */
+    flex-direction: column; /* Asegura que los elementos se apilen en columna */
+    padding: 20px 0px; /* Tamaño del botón */
+  }
+  
+  .number {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .label {
+    font-size: 0.5rem;
+    margin-top: 5px;
+  }
+  .number_s {
+    color: #b67f2a;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+  }
+  .label_s {
+    color: #b67f2a;
+    font-size: 0.5rem;
+    margin-top: 5px;
+  }
+  
